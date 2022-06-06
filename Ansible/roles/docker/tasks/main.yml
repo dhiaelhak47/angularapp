@@ -17,3 +17,14 @@
     recreate: true
     ports:
      - "4200:80"
+- name: "tag the image"
+  docker_image:
+    name: "devops:latest"
+    repository: "angular-lc:latest"
+
+- name: "push to docker registry"
+  docker_image:
+    name: "angular-lc:latest"
+    push: yes
+
+
