@@ -18,7 +18,7 @@ pipeline
 				}
 		stage('docker') {
 				steps {
-					script{
+					script{ sh "ansible-galaxy collection install community.docker"
 						sh "ansible-playbook /home/dhia/Desktop/myapp/Ansible/docker.yml -i /home/dhia/Desktop/myapp/Ansible/inventory/host.yml"
 						}
 					}
