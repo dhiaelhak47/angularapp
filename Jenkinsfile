@@ -5,7 +5,7 @@ pipeline
 		stage('Pull') {
 				steps{
 					script{
-						checkout([$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[ credentialsId: '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', url: 'https://github.com/dhiaelhak47/angularapp.git']]])
+						checkout([$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[ credentialsId: '67c2744e-c2d9-4bI7-9f12-35c2d4eaac32', url: 'https://github.com/dhiaelhak47/angularapp.git']]])
 						}
 					}
 				}
