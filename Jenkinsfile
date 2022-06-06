@@ -12,14 +12,14 @@ pipeline
 		stage('Build') {
 				steps{
 					script{
-						sh "ansible-playbook /home/dhia/Bureau/myapp/Ansible/build.yml -i /home/dhia/Bureau/myapp/Ansible/inventory/host.yml"
+						sh "ansible-playbook /home/dhia/Desktop/myapp/Ansible/build.yml -i /home/dhia/Bureau/myapp/Ansible/inventory/host.yml"
 						}
 					}
 				}
 		stage('docker') {
 				steps {
 					script{
-						sh "ansible-playbook /home/dhia/Bureau/myapp/Ansible/docker.yml -i /home/dhia/Bureau/myapp/Ansible/inventory/host.yml"
+						sh "ansible-playbook /home/dhia/Desktop/myapp/Ansible/docker.yml -i /home/dhia/Bureau/myapp/Ansible/inventory/host.yml"
 						}
 					}
 
