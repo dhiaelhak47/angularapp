@@ -1,5 +1,4 @@
 ---
-
 # tasks file for docker-registry
 - name: log into docker hub registry 
  docker_login:
